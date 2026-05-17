@@ -234,4 +234,4 @@ http://localhost:8080/swagger-ui/index.html
 
 **Adham Gamal**
 - GitHub: [@adhamgamal22](https://github.com/adhamgamal22)
-- LinkedIn: [linkedin.com/in/adhamgamal]([(https://www.linkedin.com/in/adhamgamal74)](https://www.linkedin.com/in/adhamgamal74))
+- LinkedIn: https://www.linkedin.com/in/adhamgamal74
