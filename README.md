@@ -1,7 +1,6 @@
 # 🚚 Real-Time Shipment Tracking System
 
-A production-ready **Spring Boot** backend system for managing shipments and payments with real-time notifications, live location tracking, JWT security, and Stripe integration.
-
+A **Spring Boot** backend system for managing shipments and payments with real-time notifications, live location tracking, JWT security, and Stripe integration.
 ---
 
 ## ✨ Features
@@ -55,7 +54,7 @@ src/main/java/com/Adham/Shipment/
 │   ├── UserController.java        # User profile management
 │   ├── AdminController.java       # Admin user & shipment management
 │   ├── NotificationController.java# Get & mark notifications
-│   └── LoctionController.java         # Live location tracking
+│   └── LocationController.java         # Live location tracking
 │
 ├── Services/
 │   ├── AuthService.java           # Authentication logic
@@ -235,4 +234,4 @@ http://localhost:8080/swagger-ui/index.html
 
 **Adham Gamal**
 - GitHub: [@adhamgamal22](https://github.com/adhamgamal22)
-- LinkedIn: [linkedin.com/in/adhamgamal]((https://www.linkedin.com/in/adhamgamal74))
+- LinkedIn: [linkedin.com/in/adhamgamal]([(https://www.linkedin.com/in/adhamgamal74)](https://www.linkedin.com/in/adhamgamal74))
