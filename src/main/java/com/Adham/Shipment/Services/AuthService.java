@@ -31,13 +31,17 @@ public class AuthService {
     private AuthenticationManager authenticationManager;
     private JwtHelper jwtHelper;
 
-    public void signup(SignupRequest signupRequest) {
-	if (userAccountRepo.findOneByUsername(signupRequest.username()).isPresent()) {
+    public void signup(SignupRequest request) {
+	if (userAccountRepo.findOneByUsername(request.username()).isPresent()) {
 	    throw CustomResponseException.BadRequest("Username already exists");
 	}
-	User user = User.builder().username(signupRequest.username())
-		.password(passwordEncoder.encode(signupRequest.password())).verified(true).role(Role.USER).build();
-
+	User user = new User();
+	user.setUsername(request.username());
+	user.setPhone(request.phone());
+	user.setEmail(request.email());
+	user.setPassword(passwordEncoder.encode(request.password()));
+	user.setRole(Role.USER);
+	user.setVerified(true);
 	userAccountRepo.save(user);
     }
 

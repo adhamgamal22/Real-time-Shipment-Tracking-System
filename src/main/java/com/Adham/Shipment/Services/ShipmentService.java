@@ -30,9 +30,8 @@ public class ShipmentService {
     public ShipmentResponse createshipment(CreateShipmentRequest request) {
 	String trackingnumber = generateTrackingNumber();
 	Shipment shipment = Shipment.builder().trackingNumber(trackingnumber).origin(request.getOrigin())
-		.destination(request.getDestination())
-		.estimatedDeliveryDate(LocalDate.parse(request.getEstimatedDelivrey())).price(request.getPrice())
-		.build();
+		.destination(request.getDestination()).estimatedDeliveryDate(request.getEstimatedDelivrey())
+		.price(request.getPrice()).build();
 	shipmentRepository.save(shipment);
 	notifyShipmentStatus(shipment, getStatusMessage(shipment.getStatus()));
 

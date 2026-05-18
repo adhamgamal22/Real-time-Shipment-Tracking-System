@@ -43,7 +43,7 @@ public class Shipment {
     @Column(nullable = false)
     private LocalDateTime updatedAt;
 
-    private LocalDate estimatedDeliveryDate;
+    private String estimatedDeliveryDate;
 
     private Double currentLatitude;
     private Double currentLongitude;
